@@ -23,7 +23,7 @@ def timed(fn, count):
         for i in range(count):
             start = perf_counter()
             result = fn(*args, **kwargs)
-            end = perf_counter
+            end = perf_counter()
 
             elapsed_time = end - start
             elapsed_total += elapsed_time
